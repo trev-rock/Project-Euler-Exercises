@@ -98,7 +98,7 @@ def convert_2(i):  # this converts a number to a string and evaluates first if i
             return f"ninety {convert_1(int(i[-1]))}"
 
 
-def convert_3(i):
+def convert_3(i): # if the number is an even multiple of 100 we say "whatever number it is hundred", otherwise we say "whatever number it is hundred and convert_2"
     if i >= 100 and i <= 199:
         i = str(i)
         if i[1] == "0" and i[2] == "0":
