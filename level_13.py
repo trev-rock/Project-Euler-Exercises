@@ -99,5 +99,9 @@ nums = [
 72107838435069186155435662884062257473692284509516,
 20849603980134001723930671666823555245252804609722,
 53503534226472524250874054075591789781264330331690,
-]
-print(sum(nums))
+] # given list of numbers
+sum = str(sum(nums)) # take their sum and convert it to a string 
+first_10 = [] # blank list that will hold the first 10 digits 
+for i in range(0,10): # iterate through the first 10 digits of the sum and put them in the list
+    first_10.append(sum[i])
+print("".join(first_10)) # join all of the digits together into one 
