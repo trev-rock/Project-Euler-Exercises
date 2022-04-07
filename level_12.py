@@ -12,4 +12,4 @@ while True:
     if count > 500:
         print(triangle_number)
         break
-    n += 1  # n increases by 1 every iteratiob of the loop
+    n += 1  # n increases by 1 every iteratiob of the loop 
