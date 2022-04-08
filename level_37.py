@@ -14,7 +14,7 @@ def truncate_right(num): # in this method we want to continuously remove numbers
 def truncate_left(num): # same idea as truncate_right only removing from the left
     while True:
         num.popleft()
-        if len(num) == 0: # we have this check early because otherwise the program will cause an error when there are no numbers left for it to check 
+        if len(num) == 0: 
             return True
         if prime_tester(deque_to_num(num)):
             continue
@@ -32,8 +32,7 @@ while len(nums) < 11:
         if truncate_left(counter_left) and truncate_right(counter_right): # if the number is still prime while truncating parts off in both directions then it qualifies for our list
             nums.append(counter)
             counter += 1
-            continue
-            
+            continue  
     counter += 1 # iterate to the next number
 print(sum(nums))
 
