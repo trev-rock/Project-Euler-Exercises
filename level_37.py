@@ -24,7 +24,6 @@ nums = [] # this list of numbers will hold all of the numbers that satisfy our c
 counter = 2 # the idea is to have this number go up and we don't actually alter it at all, we want to "capture" it in a given moment to test it
 #while len(nums) < 1:
 while len(nums) < 11:
-    print(counter)
     if counter == 2 or counter == 3 or counter == 5 or counter == 7:
         counter += 1
         continue # skip over these because they won't be included in the result
@@ -32,7 +31,6 @@ while len(nums) < 11:
         counter_left, counter_right = deque(str(counter)), deque(str(counter))  # convert the counter into a string and then a deque, we want two because otherwise the original counter will be altered, and it resets every time because this is where it gets reassigned 
         if truncate_left(counter_left) and truncate_right(counter_right): # if the number is still prime while truncating parts off in both directions then it qualifies for our list
             nums.append(counter)
-            print(f'{counter} woohoo')
             counter += 1
             continue
             
