@@ -1,5 +1,5 @@
 from collections import deque # we will be using a deque to truncate our number
-from tools import prime_tester
+from finally_gui import prime_tester
 def deque_to_num(x):
     return int(''.join(x))
 def truncate_right(num): # in this method we want to continuously remove numbers from the right

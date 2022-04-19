@@ -1,4 +1,4 @@
-from tools import prime_tester # we want to import this so we don't have to keep redefining it
+from finally_gui import prime_tester # we want to import this so we don't have to keep redefining it
 from collections import deque # we will be using a deque to truncate our number
 
 def deque_to_num(x):
